@@ -4,7 +4,7 @@ import { useMemo, useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Minus, Plus, ShoppingCart, Tag, X } from "lucide-react"
+import { Minus, Plus, ShoppingCart, Tag, X, ChevronDown } from "lucide-react"
 import { Currency } from "@/components/ui/currency"
 
 type MerchItem = {
@@ -23,7 +23,60 @@ type MerchCategory = {
   items: MerchItem[]
 }
 
+type Question = {
+  question: string
+  answer: string
+}
+
 const FORMS_URL = "https://forms.gle/fjTL4suyZZDPYeYD6"
+
+const FAQS: Question[] = [
+  {
+    question: "Quais formas de pagamento?",
+    answer:
+      "Os pagamentos podem ser feitos via PIX ou em dinheiro no ato da retirada. Após finalizar o pedido, você receberá um e-mail com as instruções de pagamento.",
+  },
+  {
+    question: "Moro longe de Ananindeua e agora?",
+    answer:
+      "Não tem problema! No formulário de pedido, você pode escolher entre retirar no Campus Ananindeua ou em outro campus da UEPA. Nesse caso, deixaremos seu pedido com um discente responsável que fará a entrega para você.",
+  },
+  {
+    question: "Qual o prazo de entrega?",
+    answer:
+      "Pedidos: até o dia 1º de novembro\n\nEntregas: a partir do dia 20 de novembro\n\nO prazo pode variar de acordo com a disponibilidade da fornecedora e a logística de retirada/envio entre os campi.",
+  },
+  {
+    question: "Posso pedir para outra pessoa retirar meu pedido?",
+    answer:
+      "Sim. É só informar ao CAESoft o nome completo e o campus da pessoa autorizada. Dessa forma, garantimos mais segurança no processo de entrega.",
+  },
+  {
+    question: "Tem taxa extra para retirada em outros campi?",
+    answer:
+      "Não. A logística de entrega interna é organizada pelo CAESoft, sem custo adicional para o aluno.",
+  },
+  {
+    question: "Como sei que meu pedido foi confirmado?",
+    answer:
+      "Depois de preencher o formulário, você receberá um e-mail com os dados para pagamento. Assim que o pagamento for identificado, enviaremos uma confirmação oficial por e-mail, validando o seu pedido.",
+  },
+  {
+  question: "Quais tamanhos estão disponíveis?",
+  answer:
+    "As camisas são produzidas nos tamanhos (Largura x Altura):\n\nPP – 44cm x 58cm\nP – 47cm x 65cm\nM – 51cm x 67cm\nG – 56cm x 70cm\nGG – 60cm x 72cm\nXG – 66cm x 76cm\n\nRecomendamos conferir as medidas antes de efetuar o pedido.",
+  },
+  {
+    question: "Posso trocar o tamanho depois de receber a camisa?",
+    answer:
+      "Não realizamos trocas, pois as camisas são feitas sob demanda (apenas os pedidos confirmados são produzidos). Porém, você pode combinar diretamente com outros alunos para realizar uma troca informal, caso necessário.",
+  },
+  {
+    question: "Os acessórios também seguem o mesmo esquema de retirada?",
+    answer:
+      "Sim. Tanto as camisas quanto os acessórios são entregues juntos, seguindo as mesmas regras de retirada definidas no pedido.",
+  },
+]
 
 const PROMOS: MerchItem[] = []
 
@@ -200,6 +253,68 @@ const CATEGORIES: MerchCategory[] = [
 ]
 
 const CATEGORY_ORDER: Array<MerchCategory["id"]> = ["promocoes", "vestuario", "acessorios"]
+
+function FaqItem({
+  faq,
+  isOpen,
+  onClick,
+}: {
+  faq: Question
+  isOpen: boolean
+  onClick: () => void
+}) {
+  return (
+    <div className="rounded-xl border border-purple-soft bg-card-dark hover-glow transition-all">
+      <button
+        onClick={onClick}
+        className="w-full flex justify-between items-center px-4 py-3 text-left text-light"
+      >
+        <span className="font-medium">{faq.question}</span>
+        <ChevronDown
+          size={18}
+          className={`transform transition-transform duration-300 ease-in-out ${isOpen ? "rotate-180 text-caesoft-green" : "text-light-muted"
+            }`}
+        />
+      </button>
+
+      <div
+        className={`grid overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+          }`}
+      >
+        <div className="overflow-hidden">
+          <div className="px-4 pb-4 text-sm text-light-subtle whitespace-pre-line">
+            {faq.answer}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function FAQ() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
+
+  const handleToggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index)
+  }
+
+  return (
+    <section className="mt-16">
+      <h2 className="text-2xl font-bold text-light mb-8">Perguntas frequentes</h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:items-start">
+        {FAQS.map((faq, index) => (
+          <FaqItem
+            key={index}
+            faq={faq}
+            isOpen={openIndex === index}
+            onClick={() => handleToggle(index)}
+          />
+        ))}
+      </div>
+    </section>
+  )
+}
 
 const ImagePreviewModal = ({ imageUrl, isOpen, onClose }: { imageUrl: string | null; isOpen: boolean; onClose: () => void }) => {
   const [shouldRender, setShouldRender] = useState(false);
@@ -574,6 +689,8 @@ export default function LojaClient() {
           </section>
         )
       })}
+
+      <FAQ />
 
       <section className="mt-12 text-xs text-light-muted">
         <p>
