@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://caesoft.github.io/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Allow specific social media bots
+User-agent: facebookexternalhit/*
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: DiscordBot
+Allow: /
+
+User-agent: TelegramBot
+Allow: / 

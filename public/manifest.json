@@ -1,0 +1,41 @@
+{
+  "name": "CAESoft - Centro Acadêmico de Engenharia de Software UEPA",
+  "short_name": "CAESoft UEPA",
+  "description": "Centro Acadêmico de Engenharia de Software da Universidade do Estado do Pará (UEPA). Conectando estudantes, promovendo conhecimento e construindo o futuro da tecnologia no Pará.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0C091F",
+  "theme_color": "#0C091F",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "pt-BR",
+  "categories": ["education", "academic", "technology"],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "platform": "wide"
+    }
+  ]
+} 
