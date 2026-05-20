@@ -3,7 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Section } from "@/components/section"
-import { Linkedin, Users, Award } from "lucide-react"
+import { Linkedin, Users, Award} from "lucide-react"
 import Image from "next/image"
 import { Swiper, SwiperSlide,  } from 'swiper/react';
 import 'swiper/css';
@@ -23,132 +23,84 @@ interface DirectorMember {
 const directors: DirectorMember[] = [
   {
     id: 1,
-    name: "Ryan Souza",
-    position: "Fundador e Presidente",
-    description: "Fundador do CAESoft e líder estudantil, responsável pela visão estratégica e coordenação geral das atividades do centro acadêmico.",
-    photo: "/ryan.png",
-    linkedinUrl: "https://www.linkedin.com/in/theunrealryan/"
+    name: "Lucas Rego",
+    position: "Presidente",
+    description: "Responsável por liderar o centro acadêmico, representando os estudantes em reuniões e eventos, e coordenando as atividades gerais do CAESoft.",
+    photo: "/foto-lucasrego.jpg",
+    linkedinUrl: "#"
+    // TODO: Adicionar o Linkedin
   },
   {
     id: 2,
     name: "Jorge Hermes",
     position: "Diretor de Desenvolvimento",
     description: "Especialista em desenvolvimento de projetos e tecnologia, responsável pela aceleração de iniciativas tecnológicas e arquitetura de soluções.",
-    photo: "jorgehermes.jpg",
+    photo: "/foto-jhermes.jpg",
     linkedinUrl: "https://www.linkedin.com/in/jhermesn/"
   },
   {
     id: 3,
-    name: "Isabelle Campos",
-    position: "Cofundadora e Vice Presidente",
-    description: "Atua no apoio à presidência e na coordenação de projetos estratégicos, auxiliando na gestão administrativa e acadêmica do centro.",
-    photo: "/belle.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/isabelle-campos-7b5b22331"
+    name: "Roberta Letícia",
+    position: "Vice-Presidente",
+    description: "Auxilia o presidente na liderança do centro acadêmico, assumindo responsabilidades em reuniões e eventos, e apoiando a coordenação das atividades do CAESoft.",
+    photo: "/foto-robertalet.jpg",
+    linkedinUrl: "#"
+    // TODO: Adicionar o Linkedin
   },
   {
     id: 4,
-    name: "Thaylan Fonseca",
-    position: "Organizador de Eventos e Desenvolvedor Front-End",
-    description: "Responsável pela organização e coordenação de eventos, workshops, palestras e atividades acadêmicas do CAESoft.",
-    photo: "/thaylanfonseca.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/thaylanbf1/ "
+    name: "Icaro Mateus",
+    position: "Recepcionista do CAESoft",
+    description: "Responsável por receber e acolher os estudantes, visitantes e membros do CAESoft, garantindo um ambiente amigável e organizado para todos que frequentam o centro acadêmico.",
+    photo: "https://images.pexels.com/photos/7893725/pexels-photo-7893725.jpeg",
+    linkedinUrl: "#"
+    // TODO: Adicionar o Linkedin
   },
   {
-    id: 5,
-    name: "Jonathan Nascimento",
-    position: "Tesoureiro",
-    description: "Responsável pela gestão financeira do centro acadêmico, controlando orçamentos, recursos e planejamento financeiro.",
-    photo: "/jonathan.jpg",
-    linkedinUrl: "http://linkedin.com/in/jonathan-nascimento-60874832b"
+    "id": 5,
+    "name": "João Vitor Reis",
+    "position": "Mídia e Desenvolvedor Front-end",
+    "description": "Responsável pela gestão de mídias sociais, criação de conteúdo digital e desenvolvimento front-end para as plataformas do CAESoft.",
+    "photo": "/foto-joaovitor.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/joaovitor-reis/"
+    // TODO: Adicionar o Linkedin
   },
   {
     "id": 6,
-    "name": "Caio Amaral",
-    "position": "Ajudante",
-    "description": "Responsável por apoiar nas atividades operacionais e administrativas do CAESoft.",
-    "photo": "/caio.jpg",
-    "linkedinUrl": "https://www.linkedin.com/in/cnnamarall/"
+    "name": "Nina Fernandes",
+    "position": "Mídia",
+    "description": "Responsável pela gestão de mídias sociais, criação de conteúdo digital e estratégias de comunicação para o CAESoft.",
+    "photo": "https://images.pexels.com/photos/17003089/pexels-photo-17003089.jpeg",
+    "linkedinUrl": "#"
+    // TODO: Adicionar o Linkedin
   },
   {
     "id": 7,
-    "name": "Claudio Henrique",
-    "position": "Designer",
-    "description": "Responsável pela criação de identidade visual, design gráfico e material de comunicação do CAESoft.",
-    "photo": "/claudio.jpg",
-    "linkedinUrl": "https://www.linkedin.com/in/claudiohen-rique/"
+    "name": "Jhenifer Amparo",
+    "position": "Secretária",
+    "description": "Responsável por auxiliar nas atividades administrativas, organização de reuniões e eventos, e suporte geral às operações do CAESoft.",
+    "photo": "/foto-jhenifer.jpg",
+    "linkedinUrl": "#"
+    // TODO: Adicionar o Linkedin
   },
   {
     "id": 8,
-    "name": "Guilherme Miranda",
-    "position": "Ajudante",
-    "description": "Auxilia nas diversas atividades do centro acadêmico, prestando apoio nas demandas diárias.",
-    "photo": "/guilherme.jpg",
+    "name": "José Roberto",
+    "position": "Secretário",
+    "description": "Auxilia nas atividades administrativas, organização de reuniões e eventos, e suporte geral às operações do CAESoft.",
+    "photo": "/foto-roberto.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/jos%C3%A9-roberto-80b02a383/"
+    // TODO: Adicionar o Linkedin
+  },
+  {
+    "id": 8,
+    "name": "Matheus Luz",
+    "position": "Tesoureiro",
+    "description": "Responsável pela gestão financeira do CAESoft, incluindo orçamento, controle de despesas e arrecadação de fundos para as atividades do centro acadêmico.",
+    "photo": "https://images.pexels.com/photos/7972783/pexels-photo-7972783.jpeg",
     "linkedinUrl": "#"
+    // TODO: Adicionar o Linkedin
   },
-  {
-    "id": 9,
-    "name": "Iam Melo",
-    "position": "Social Media",
-    "description": "Responsável pela comunicação digital, gestão das redes sociais e criação de conteúdo online do CAESoft.",
-    "photo": "/iam.jpg",
-    "linkedinUrl": "https://www.linkedin.com/in/iam-melo"
-  },
-  {
-    "id": 10,
-    "name": "Marcos Okita",
-    "position": "Desenvolvedor",
-    "description": "Atua no desenvolvimento de sistemas e soluções tecnológicas para o CAESoft.",
-    "photo": "/okita.jpg",
-    "linkedinUrl": "https://www.linkedin.com/in/marcos-okitaa/"
-  },
-  {
-    "id": 11,
-    "name": "Matheus Willian",
-    "position": "Desenvolvedor",
-    "description": "Responsável pelo desenvolvimento de plataformas e soluções técnicas dentro do CAESoft.",
-    "photo": "/matheusWillian.jpg",
-    "linkedinUrl": "https://www.linkedin.com/in/mkwillian/"
-  },
-  {
-    "id": 12,
-    "name": "Valdemiro Facundo",
-    "position": "Gestor Multimídia",
-    "description": "Responsável pela criação de conteúdo multimídia, como vídeos e animações, para as atividades do CAESoft.",
-    "photo": "/valdemirofacundo.png",
-    "linkedinUrl": "https://www.linkedin.com/in/valdemiro-f-51637a282/"
-  },
-  {
-    "id": 13,
-    "name": "Erllon Olivier",
-    "position": "Multimídia",
-    "description": "Auxilia na criação de conteúdo multimídia e na gestão de vídeos e outros materiais audiovisuais.",
-    "photo": "/erllon.jpg",
-    "linkedinUrl": "#"
-  },
-  {
-    "id": 14,
-    "name": "Luyze Marques",
-    "position": "Secretária",
-    "description": "Apoia as atividades administrativas e operacionais do CAESoft, prestando auxílio conforme a necessidade.",
-    "photo": "luyze.jpg",
-    "linkedinUrl": "https://www.linkedin.com/in/luyzee-marques/"
-  },
-    {
-    "id": 15,
-    "name": "Joice Neves",
-    "position": "Gestora Multimídia",
-    "description": "Auxilia na criação de conteúdo multimídia e na gestão de vídeos e outros materiais audiovisuais.",
-    "photo": "joice.jpg",
-    "linkedinUrl": "https://www.linkedin.com/in/joice-neves-2b6438341/"
-  },
-    {
-    "id": 16,
-    "name": "José Matheus",
-    "position": "Desenvolvedor",
-    "description": "Responsável pelo desenvolvimento de plataformas e soluções técnicas dentro do CAESoft.",
-    "photo": "/josematheus.jpg",
-    "linkedinUrl": "https://www.linkedin.com/in/matheuz-rodrigues-dev/"
-  }
 ]
 
 export const DirectorshipSection = () => {
