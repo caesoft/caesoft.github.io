@@ -173,6 +173,8 @@ export default function LojaClient() {
   const [selectedQuantities, setSelectedQuantities] = useState<Record<string, number>>({})
   const [selectedSizeByItem, setSelectedSizeByItem] = useState<Record<string, string>>({})
   const [clipboardError, setClipboardError] = useState<string | null>(null)
+  const [showConstruction, setShowConstruction] = useState(true)
+  // essa const aq mostra a menssagem de sob construção
 
   const itemMap = useMemo(() => {
     const map = new Map<string, { item: MerchItem; categoryId: string; categoryName: string }>()
@@ -279,6 +281,13 @@ export default function LojaClient() {
             <span className="mr-0">Qtd: {totalQuantity}</span>
             <span>Total: <Currency value={totalBRL} /></span>
           </div>
+          <Button
+            variant="ghost"
+            onClick={() => setShowConstruction((s) => !s)}
+            className="text-sm text-light-muted border border-purple-soft h-9"
+          >
+            {showConstruction ? 'Ocultar construção' : 'Em construção'}
+          </Button>
           <Button
             onClick={handleGenerateOrder}
             disabled={!selectedEntries.length}
@@ -524,6 +533,20 @@ export default function LojaClient() {
                 }}
               >
                 Copiar
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+      {/* Construction overlay (toggleable) */}
+      {showConstruction && (
+        <div className="construction-overlay" role="alert">
+          <div className="construction-message">
+            <h2>Em construção!</h2>
+            <p>Esta página está em construção. Algumas funcionalidades podem não estar disponíveis.</p>
+            <div className="mt-4">
+              <Button onClick={() => setShowConstruction(false)} className="bg-gradient-to-r from-caesoft-purple to-caesoft-green text-white">
+                Fechar
               </Button>
             </div>
           </div>
