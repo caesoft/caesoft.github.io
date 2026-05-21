@@ -10,84 +10,81 @@ const disciplinesBySemester = [
   {
     semester: "1º Semestre",
     subjects: [
-      "Matemática Discreta (80h)",
-      "Fundamentos de Sistemas de Informação (60h)",
-      "Fundamentos de Sistemas Operacionais (60h)",
-      "Linguagens Formais (80h)",
-      "Programação Estruturada (80h)",
-      "Inglês Instrumental (40h)"
+      "Algoritmos e Programação Estruturada (80h)",
+      "Cultura, Sociedade e Tecnologia (80h)",
+      "Fundamentos de Sistemas Operacionais (80h)",
+      "Lógica Computacional (80h)",
+      "Programação Web I (80h)",
     ]
   },
   {
     semester: "2º Semestre", 
     subjects: [
-      "Estatística Aplicada a Informática (60h)",
-      "Análise Orientada a Objetos (80h)",
-      "Modelagem de Dados (60h)",
+      "Banco de Dados I (80h)",
       "Estrutura de Dados, Pesquisa e Ordenação (80h)",
-      "Programação Web (80h)"
+      "Fundamentos de Engenharia de Software (60h)",
+      "Programação Web II (80h)",
+      "Projeto Extensionista I (80h)"
     ]
   },
   {
     semester: "3º Semestre",
     subjects: [
-      "Fundamentos de Engenharia de Software (60h)",
-      "Programação Orientada a Objetos I (80h)",
-      "Banco de Dados I (80h)",
-      "Análise e Projeto de Algoritmos (80h)",
-      "Microcontroladores e Microprocessadores (80h)",
-      "Inovação Tecnológica e Empreendedorismo (60h)"
+      "Análise Orientada à Objetos (60h)",
+      "Banco de Dados II (80h)",
+      "Processos de Desenvolvimento de Software (80h)",
+      "Programação Orientada a Objetos (90h)",
+      "Projeto Extensionista II (80h)",
     ]
   },
   {
     semester: "4º Semestre",
     subjects: [
-      "Programação Orientada a Objetos II (80h)",
-      "Análise e Projeto de Software (80h)",
-      "Banco de Dados II (80h)",
-      "Sistemas Multirrobóticos (60h)",
-      "Projeto Integrado I (80h)"
+      "Análise e Projeto de Algoritmos (80h)",
+      "Banco de Dados III (80h)",
+      "Linguagens Formais e Compiladores (80h)",
+      "Microcontroladores e Microprocessadores (90h)",
+      "Projeto Extensionista III (80h)"
     ]
   },
   {
     semester: "5º Semestre",
     subjects: [
-      "Processos de Desenvolvimento de Software (80h)",
-      "Arquitetura de Software (60h)",
+      "Arquitetura de Software (80h)",
+      "Estatística Aplicada a Informática (80h)",
+      "Fundamentos e Projeto de Redes de Computadores (80h)",
       "Gerência de Projetos (80h)",
-      "Robótica Móvel (60h)",
-      "Cultura, Sociedade e Tecnologia (60h)",
-      "Fundamentos de Redes de Computadores (80h)"
+      "Programação Mobile (80h)",
+      "Projeto Extensionista IV (80h)"
     ]
   },
   {
     semester: "6º Semestre",
     subjects: [
-      "Fundamentos de Sistemas Embarcados (60h)",
-      "Gestão de Infraestrutura de Redes (60h)",
-      "Governança de TIC (80h)",
-      "Programação Mobile (60h)",
-      "Compiladores e Interpretadores (80h)",
-      "Projeto Integrado II (80h)"
+      "Gestão de Infraestrutura de Redes (80h)",
+      "Interação Humano Computador (80h)",
+      "Inteligência Computacional (80h)",
+      "Sistemas Multirrobóticos (80h)",
+      "Projeto Extensionista V (80h)",
     ]
   },
   {
     semester: "7º Semestre",
     subjects: [
-      "Projeto de Redes e Segurança (80h)",
+      "Desenvolvimento com containers (80h)",
       "Estimativa de Software (80h)",
-      "Realidade Virtual (60h)",
-      "Interação Humano-Computador (80h)",
-      "Optativa (80h)"
+      "Projeto de Trabalho de Conclusão de Curso (80h)",
+      "Ciência de Dados (80h)",
+      "Teste de Software (80h)"
     ]
   },
   {
     semester: "8º Semestre",
     subjects: [
-      "Design de Produtos Interativos com Internet das Coisas (40h)",
-      "Teste de Software (80h)",
-      "Análise e Visualização de Dados (80h)",
-      "Mineração de Dados (80h)",
+      "Cibersegurança (80h)",
+      "DevOps - Integração e Entrega Contínuas (80h)",
+      "Inovação Tecnológica e Empreendedorismo (60h)",
+      "Optativa (80h)",
       "Optativa (80h)",
       "Trabalho de Conclusão de Curso (120h)"
     ]
@@ -182,24 +179,40 @@ const professors = [
 ]
 
 const optionalSubjects = [
-  "Disciplinas Optativas (160h total)",
-  "Educação Socioambiental (80h)",
-  "Língua Brasileira de Sinais (80h)",
-  "Direitos Humanos e dos Povos Tradicionais (80h)",
-  "Acessibilidade e Inclusão Digital (80h)",
-  "Tecnologia em Contexto Social (80h)",
-  "Tópicos Especiais em Redes de Computadores (80h)",
-  "Tópicos Especiais em Banco de Dados (80h)",
-  "Tópicos Especiais em Engenharia de Software (80h)",
-  "Inteligência Computacional (80h)",
-  "Multimídia e Interatividade (80h)",
-  "Marketing Relacional (80h)",
-  "Agilidade em Software (80h)",
-  "Gerência da Conectividade Computacional (80h)",
-  "Introdução em Desenvolvimento de Jogos Digitais (80h)",
-  "Tópicos Especiais em Computação (80h)",
-  "Logistica e Supply Chain (80h)",
-  "Tecnologias Assistivas (80h)"
+  "Acessibilidade e Inclusão Digital",
+  "Agilidade em Software",
+  "Análise de projetos com Design Thinking",
+  "Análise e Visualização de Dados",
+  "Computação em nuvem",
+  "Computação Evolutiva",
+  "Design de Produtos Interativos com Internet das Coisas",
+  "Direito aplicado à informática",
+  "Direitos Humanos e dos Povos Tradicionais",
+  "Educação Socioambiental",
+  "Escrita de artigos científicos",
+  "Fundamentos de Sistemas de Informação",
+  "Gerência da Conectividade Computacional",
+  "Governança de TIC",
+  "Inglês instrumental",
+  "Inteligência Artificial Generativa",
+  "Introdução em Desenvolvimento de Jogos Digitais",
+  "Linguagem Brasileira de Sinais - Libras",
+  "Logistica e Supply Chain",
+  "Marketing Relacional",
+  "Mineração de Dados",
+  "Multimídia e Interatividade",
+  "Realidade Virtual",
+  "Redes Neurais Artificiais",
+  "Robótica Móvel",
+  "Sistemas Fuzzy",
+  "Tecnologia em Contexto Social",
+  "Tecnologias Assistivas",
+  "Tópicos Especiais em Banco de Dados",
+  "Tópicos Especiais em Banco de Dados",
+  "Tópicos Especiais em Ciência de Dados",
+  "Tópicos Especiais em Engenharia de Software",
+  "Tópicos Especiais em Inteligência Computacional",
+  "Tópicos Especiais em Redes de Computadores",
 ]
 
 export const AboutCourseSection = () => {
@@ -301,13 +314,13 @@ export const AboutCourseSection = () => {
           <div className="mb-6 md:mb-12">
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               <Badge variant="outline" className="!bg-caesoft-purple hover:!brightness-110 !text-white !border-caesoft-purple px-4 py-2 transition-all duration-200">
-                3.880h Total
+                3.840h Total
               </Badge>
               <Badge variant="outline" className="!bg-caesoft-green hover:!brightness-110 !text-white !border-caesoft-green px-4 py-2 transition-all duration-200">
-                3.160h Disciplinas
+                3.240h Disciplinas
               </Badge>
               <Badge variant="outline" className="!bg-caesoft-navy hover:!brightness-110 !text-white !border-caesoft-navy px-4 py-2 transition-all duration-200">
-                600h Atividades Complementares
+                480h Atividades Complementares
               </Badge>
               <Badge variant="outline" className="!bg-caesoft-purple/80 hover:!brightness-110 !text-white !border-caesoft-purple/80 px-4 py-2 transition-all duration-200">
                 192h Estágio
@@ -438,7 +451,7 @@ export const AboutCourseSection = () => {
               <Button 
                 size="lg" 
                 className="bg-caesoft-green hover:bg-caesoft-green/90 text-caesoft-navy w-full sm:w-auto"
-                onClick={() => window.open('https://drive.google.com/file/d/1xpjfaVOdWzTOClDeGv5gXGOmgJgjCc4N/view?usp=drive_link', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/17GW__VWkqGYJYMeg9dGpBMb1Xu9-ptkD/view?usp=sharing', '_blank')}
               >
                 <Download className="mr-2" size={16} />
                 Baixar PPC Completo
@@ -447,7 +460,7 @@ export const AboutCourseSection = () => {
               <Button 
                 size="lg" 
                 className="bg-caesoft-purple hover:bg-caesoft-purple/90 text-white w-full sm:w-auto"
-                onClick={() => window.open('https://drive.google.com/file/d/1fxje6407EnBsab_yC0YJ0zx9ou6BMXMM/view?usp=drive_link', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1fMbvDSh0v9zi5hghIzQzZEJJxwGsLiEU/view?usp=sharing', '_blank')}
               >
                 <FileText className="mr-2" size={16} />
                 Atividades Complementares

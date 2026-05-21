@@ -18,7 +18,7 @@ export const ResourcesSection = () => {
       icon: BookOpen,
       title: "PPC do Curso",
       description: "Projeto Pedagógico do Curso de Engenharia de Software",
-      link: "https://drive.google.com/file/d/1xpjfaVOdWzTOClDeGv5gXGOmgJgjCc4N/view?usp=drive_link",
+      link: "https://drive.google.com/file/d/17GW__VWkqGYJYMeg9dGpBMb1Xu9-ptkD/view?usp=drive_link",
       external: true
     },
     {

@@ -26,16 +26,15 @@ const directors: DirectorMember[] = [
     name: "Lucas Rego",
     position: "Presidente",
     description: "Responsável por liderar o centro acadêmico, representando os estudantes em reuniões e eventos, e coordenando as atividades gerais do CAESoft.",
-    photo: "/foto-lucasrego.jpg",
-    linkedinUrl: "#"
-    // TODO: Adicionar o Linkedin
+    photo: "foto-lucasrego.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/lucas-rego-conduru-649a5a364/"
   },
   {
     id: 2,
     name: "Jorge Hermes",
     position: "Diretor de Desenvolvimento",
     description: "Especialista em desenvolvimento de projetos e tecnologia, responsável pela aceleração de iniciativas tecnológicas e arquitetura de soluções.",
-    photo: "/foto-jhermes.jpg",
+    photo: "foto-jhermes.jpg",
     linkedinUrl: "https://www.linkedin.com/in/jhermesn/"
   },
   {
@@ -43,9 +42,8 @@ const directors: DirectorMember[] = [
     name: "Roberta Letícia",
     position: "Vice-Presidente",
     description: "Auxilia o presidente na liderança do centro acadêmico, assumindo responsabilidades em reuniões e eventos, e apoiando a coordenação das atividades do CAESoft.",
-    photo: "/foto-robertalet.jpg",
-    linkedinUrl: "#"
-    // TODO: Adicionar o Linkedin
+    photo: "foto-robertalet.jpg",
+    linkedinUrl: "https://www.linkedin.com/in/roberta-sousa-713b16392?trk=contact-info"
   },
   {
     id: 4,
@@ -61,43 +59,39 @@ const directors: DirectorMember[] = [
     "name": "João Vitor Reis",
     "position": "Mídia e Desenvolvedor Front-end",
     "description": "Responsável pela gestão de mídias sociais, criação de conteúdo digital e desenvolvimento front-end para as plataformas do CAESoft.",
-    "photo": "/foto-joaovitor.jpg",
+    "photo": "foto-joaovitor.jpg",
     "linkedinUrl": "https://www.linkedin.com/in/joaovitor-reis/"
-    // TODO: Adicionar o Linkedin
   },
   {
     "id": 6,
     "name": "Nina Fernandes",
     "position": "Mídia",
     "description": "Responsável pela gestão de mídias sociais, criação de conteúdo digital e estratégias de comunicação para o CAESoft.",
-    "photo": "https://images.pexels.com/photos/17003089/pexels-photo-17003089.jpeg",
-    "linkedinUrl": "#"
-    // TODO: Adicionar o Linkedin
+    "photo": "foto-nina.jpg",
+    "linkedinUrl": "https://www.linkedin.com/in/ninagf/"
   },
   {
     "id": 7,
     "name": "Jhenifer Amparo",
     "position": "Secretária",
     "description": "Responsável por auxiliar nas atividades administrativas, organização de reuniões e eventos, e suporte geral às operações do CAESoft.",
-    "photo": "/foto-jhenifer.jpg",
-    "linkedinUrl": "#"
-    // TODO: Adicionar o Linkedin
+    "photo": "foto-jhenifer.jpg",
+    "linkedinUrl": "www.linkedin.com/in/jhenifer-amparo-a68a14355"
   },
   {
     "id": 8,
     "name": "José Roberto",
     "position": "Secretário",
     "description": "Auxilia nas atividades administrativas, organização de reuniões e eventos, e suporte geral às operações do CAESoft.",
-    "photo": "/foto-roberto.jpg",
+    "photo": "foto-roberto.jpg",
     "linkedinUrl": "https://www.linkedin.com/in/jos%C3%A9-roberto-80b02a383/"
-    // TODO: Adicionar o Linkedin
   },
   {
     "id": 8,
     "name": "Matheus Luz",
     "position": "Tesoureiro",
     "description": "Responsável pela gestão financeira do CAESoft, incluindo orçamento, controle de despesas e arrecadação de fundos para as atividades do centro acadêmico.",
-    "photo": "https://images.pexels.com/photos/7972783/pexels-photo-7972783.jpeg",
+    "photo": "foto-matheusluz.jpg",
     "linkedinUrl": "#"
     // TODO: Adicionar o Linkedin
   },
