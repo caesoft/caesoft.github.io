@@ -454,3 +454,43 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(89, 62, 255, 0.7) !important;
   transform: scale(1.1) !important;
 }
+
+/* Construction overlay - can be toggled per-page */
+.construction-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(4, 4, 8, 0.55);
+  backdrop-filter: blur(6px) saturate(120%);
+  -webkit-backdrop-filter: blur(6px) saturate(120%);
+  z-index: 99999;
+  transition: opacity 200ms ease-in-out;
+}
+
+.construction-message {
+  background: rgba(12, 9, 31, 0.96);
+  border: 1px solid rgba(89, 62, 255, 0.18);
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--foreground);
+  box-shadow: 0 12px 40px rgba(8, 5, 24, 0.7);
+  max-width: 90%;
+}
+
+.construction-message h2 {
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+  color: #ECF2F9;
+}
+
+.construction-message p {
+  margin: 0;
+  color: rgba(236, 242, 249, 0.85);
+}
+
+.construction-hidden {
+  display: none !important;
+}

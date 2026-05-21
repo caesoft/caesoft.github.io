@@ -6,8 +6,6 @@ import { Section } from "@/components/section"
 import { Linkedin, Users, Award} from "lucide-react"
 import Image from "next/image"
 import { Swiper, SwiperSlide,  } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 import { useRef, useCallback } from 'react';
 
@@ -51,8 +49,8 @@ const directors: DirectorMember[] = [
     position: "Recepcionista do CAESoft",
     description: "Responsável por receber e acolher os estudantes, visitantes e membros do CAESoft, garantindo um ambiente amigável e organizado para todos que frequentam o centro acadêmico.",
     photo: "https://images.pexels.com/photos/7893725/pexels-photo-7893725.jpeg",
-    linkedinUrl: "#"
-    // TODO: Adicionar o Linkedin
+    linkedinUrl: "https://www.linkedin.com/in/icaro-matheus-silva/"
+    // TODO: Adicionar foto do Icaro quando possível, atualmente usando uma imagem genérica de recepcionista.
   },
   {
     "id": 5,
@@ -87,13 +85,12 @@ const directors: DirectorMember[] = [
     "linkedinUrl": "https://www.linkedin.com/in/jos%C3%A9-roberto-80b02a383/"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Matheus Luz",
     "position": "Tesoureiro",
     "description": "Responsável pela gestão financeira do CAESoft, incluindo orçamento, controle de despesas e arrecadação de fundos para as atividades do centro acadêmico.",
     "photo": "foto-matheusluz.jpg",
-    "linkedinUrl": "#"
-    // TODO: Adicionar o Linkedin
+    "linkedinUrl": "www.linkedin.com/in/matheusluzsilva"
   },
 ]
 
@@ -169,7 +166,7 @@ export const DirectorshipSection = () => {
               {directors.map((director) => (
                 <SwiperSlide key={director.id} className="py-4">
                   <Card className="glass-effect-light border-purple-soft hover:border-caesoft-purple/60 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 min-h-[450px]">
-                    <CardContent className="p-6 text-center  h-full">
+                    <CardContent className="p-6 text-center h-full">
                       {/* Foto circular */}
                       <div className="relative w-32 h-32 mx-auto mb-4">
                         <div className="w-full h-full rounded-full bg-gradient-to-br from-caesoft-purple to-caesoft-green p-1">
