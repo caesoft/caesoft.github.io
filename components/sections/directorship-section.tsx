@@ -74,7 +74,7 @@ const directors: DirectorMember[] = [
     "position": "Secretária",
     "description": "Responsável por auxiliar nas atividades administrativas, organização de reuniões e eventos, e suporte geral às operações do CAESoft.",
     "photo": "foto-jhenifer.jpg",
-    "linkedinUrl": "www.linkedin.com/in/jhenifer-amparo-a68a14355"
+    "linkedinUrl": "https://www.linkedin.com/in/jhenifer-amparo-a68a14355/"
   },
   {
     "id": 8,
@@ -90,7 +90,7 @@ const directors: DirectorMember[] = [
     "position": "Tesoureiro",
     "description": "Responsável pela gestão financeira do CAESoft, incluindo orçamento, controle de despesas e arrecadação de fundos para as atividades do centro acadêmico.",
     "photo": "foto-matheusluz.jpg",
-    "linkedinUrl": "www.linkedin.com/in/matheusluzsilva"
+    "linkedinUrl": "https://www.linkedin.com/in/matheusluzsilva/"
   },
 ]
 
