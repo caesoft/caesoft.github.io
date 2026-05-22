@@ -48,7 +48,7 @@ const directors: DirectorMember[] = [
     name: "Icaro Mateus",
     position: "Recepcionista do CAESoft",
     description: "Responsável por receber e acolher os estudantes, visitantes e membros do CAESoft, garantindo um ambiente amigável e organizado para todos que frequentam o centro acadêmico.",
-    photo: "https://images.pexels.com/photos/7893725/pexels-photo-7893725.jpeg",
+    photo: "foto-icaromateus.jpg",
     linkedinUrl: "https://www.linkedin.com/in/icaro-matheus-silva/"
     // TODO: Adicionar foto do Icaro quando possível, atualmente usando uma imagem genérica de recepcionista.
   },
