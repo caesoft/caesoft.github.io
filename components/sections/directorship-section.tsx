@@ -46,8 +46,8 @@ const directors: DirectorMember[] = [
   {
     id: 4,
     name: "Icaro Matheus",
-    position: "Recepcionista do CAESoft",
-    description: "Responsável por receber e acolher os estudantes, visitantes e membros do CAESoft, garantindo um ambiente amigável e organizado para todos que frequentam o centro acadêmico.",
+    position: "Comunicação & Atendimento",
+    description: "Responsável pela gestão de mensagens, e-mails e pelo atendimento direto aos estudantes no Centro Acadêmico.",
     photo: "foto-icaromateus.jpg",
     linkedinUrl: "https://www.linkedin.com/in/icaro-matheus-silva/"
   },
@@ -62,7 +62,7 @@ const directors: DirectorMember[] = [
   {
     "id": 6,
     "name": "Nina Fernandes",
-    "position": "Mídia",
+    "position": "Social Mídia",
     "description": "Responsável pela gestão de mídias sociais, criação de conteúdo digital e estratégias de comunicação para o CAESoft.",
     "photo": "foto-nina.jpg",
     "linkedinUrl": "https://www.linkedin.com/in/ninagf/"
